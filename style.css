@@ -18,7 +18,7 @@ nav {
 }
 body {
     margin: 0;
-    background: linear-gradient(16deg, rgba(9, 60, 121, 1), rgba(0, 212, 255, 1));
+    background: linear-gradient(16deg, rgba(9, 60, 121, 1), rgb(0, 121, 146));
     color: white;
     background-attachment: fixed;
     display: flex;
