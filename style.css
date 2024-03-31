@@ -1,24 +1,33 @@
 header a {
     color: white;
 }
+header  a:visited{
+    color: white;
+}
 header {
     background-color: #000366;
     padding: 10px;
     margin: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
     width: 99%;
     box-shadow: 0px 8px 4px #080939;
 }
 nav {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 50px;
+    margin-top: -30px;
+    margin-bottom: 17.5px;
+}
+.name{
+    position: relative;
+    left: 50px;
+    display: inline;
+    font-size: 1.2em;
 }
 body {
     margin: 0;
-    background: linear-gradient(16deg, rgba(9, 60, 121, 1), rgb(0, 121, 146));
+    background-color: rgba(9, 60, 121, 1);
     color: white;
     background-attachment: fixed;
     display: flex;
@@ -39,14 +48,17 @@ table, td, th{
 .projects_body a{
     color: rgb(171, 168, 74);
 }
+a{
+color: #00bbff;
+}
 a:link{
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
-a::after{
-    color: #160060/*----------------------------------------------------------------------------------------*/
+a:visited{
+    color: #545aff;
 }
 td {
     padding-left: 5px;
@@ -85,13 +97,12 @@ h1, h2, h3 {
 }*/
 .main_parcours{
     display: flex;
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
 }
 .circle1{
-    position: relative;
-    top: 25px;
-    left: -250px;
     width: 750px;
     height: 500px;
     background-color: rgb(0, 70, 23);
@@ -104,10 +115,7 @@ strong{
     font-size: 1.2em;
 }
 .circle2{
-    position: relative;
-    left: 500px;
-    top: -250px;
-    background-color: rgb(0, 70, 23);
+    background-color: rgb(51, 31, 0);
     border-radius: 10px;
     padding: 15px;
     text-align: left;
@@ -115,6 +123,7 @@ strong{
     align-self: center;
 }
 .circle3{
+    width: 450px;
     background-color: #4c0000;
     border-radius: 90px 90px 0px 90px;
     padding: 20px;
@@ -145,11 +154,11 @@ strong{
     font-size: 1.3em;
 }
 .main_autre{
-    padding: 25px;
+    padding: 15px;
     display: grid;
     grid-template-columns: 245px 245px 245px 245px 245px 245px;
     grid-template-rows: 245px 245px 245px 245px 245px 245px;
-    gap: 20px;
+    gap: 5px;
 }
 .autre{
     text-align: center;
@@ -185,19 +194,75 @@ strong{
 p{
     font-size: 1.3em;
 }
-.name{
-    margin-left: 250px;
-    margin-top: 50px;
+li{
+    font-size: 1.3em;
 }
 .CV{
     text-align: center;
-    padding: 25px;
+    font-size: 2.5em;
+    margin-left: 150px;
+    padding: 20px 17px 20px 17px;
     border: black 2px solid;
     background-color:rgb(8, 0, 71);
     width: 50px;
     border-radius: 15px;
 }
-/*.index_main{
+.index_main{
     display: flex;
-    flex-direction: row;
-}*/
+    flex-direction: column;
+    gap: 50px;
+}
+.galerie{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 540px 540px;
+    grid-template-rows:repeat(3, 480px);
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 250px;
+}
+.one {
+    font-size: 2em;
+    text-align: center;
+    scale: 0.5;
+    object-fit: cover;
+}
+.two {
+    font-size: 2em;
+    text-align: center;
+    scale: 0.5;
+    object-fit: cover;
+}
+.three {
+    font-size: 2em;
+    text-align: center;
+    scale: 0.5;
+    object-fit: cover;
+}
+.four {
+    font-size: 2em;
+    text-align: center;
+    scale: 0.5;
+    object-fit: cover;
+}
+.five {
+    font-size: 2em;
+    text-align: center;
+    scale: 0.5;
+    object-fit: cover;
+}
+.presentation_site{
+    text-align: center;
+    border: 5px solid transparent;
+    height: 105px;
+    border-image: 16 repeating-linear-gradient(-45deg, yellow 0, yellow 1em, transparent 0, transparent 2em,
+                  rgb(0, 0, 0) 0, rgb(0, 0, 0) 3em, transparent 0, transparent 4em);
+    
+    max-width: 20em;
+    font: 100%/1.6 Baskerville, Palatino, serif;
+}
+.visite{
+    position: relative;
+    left: 550px;
+    top: -50px;
+}
