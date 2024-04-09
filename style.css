@@ -67,6 +67,7 @@ td{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    font-size: 1.3em;
 }
 .projects_body a{
     color: rgb(171, 168, 74);
@@ -225,6 +226,9 @@ li a{
     top: 50px;
     left: 20px;
 }
+.galerie p{
+    font-size: 0.8em;
+}
 .one {
     padding: 20px;
     margin: 10px;
@@ -287,26 +291,31 @@ li a{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
+    text-align: justify;
 }
 .astro{
     border: solid black 2px;
     padding: 20px;
     max-width: 44%;
+    border-radius: 45px;
 }
 .musique{
     border: solid black 2px;
     padding: 20px;
     max-width: 44%;
+    border-radius: 45px;
 }
 .nature{
     border: solid black 2px;
     padding: 20px;
     max-width: 44%;
+    border-radius: 45px;
 }
 .escalade{
     border: solid black 2px;
     padding: 20px;
     max-width: 44%;
+    border-radius: 45px;
 }
 h3{
     margin-bottom: 0px;
