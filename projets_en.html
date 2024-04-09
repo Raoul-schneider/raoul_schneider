@@ -8,61 +8,144 @@
 </head>
 <body>
     <header>
+        <a href="index_en.html" class="name_link"><h1 class="name">Personal website<br>Raoul Schneider</h1></a>
         <nav>
             <a href="index_en.html">Home</a>
-            <a href="parcour_en.html">Parcours</a>
+            <a href="parcours_en.html">Education and training</a>
             <a href="projets_en.html">Projects</a>
-            <a href="index.html">fr</a>
+            <a href="autres_centres_d'interets_en.html">Other interests</a>
+                <!-- <label for="language">language</label>
+                <select name="language" id="language">
+                    <option value="fr"><img src="photos/27099.png" alt="">Français</option>
+                    <option value="en"><img src="photos/en.png" alt="">English</option>
+                </select> -->
+            <a href="projets.html" class="right_nav"><img src="photos/27099.png" alt=""></a>
         </nav>
     </header>
     <main class="projects_body">
         <table>
-            <th colspan="4" class="table_title">3D prints</th>
+            <tr></tr><th colspan="2" class="table_title">Electronic</th></tr>
+            <th colspan="2">Those projects has been made with the goal to learn electronic</th>
             <tr>
-                <th>Projects</th>
-                <th>Softwares</th>
-                <th>Hardware</th>
-                <th>Links</th>
+                <th>Project</th>
+                <th>Description</th>
             </tr>
             <tr>
-                <td>Impression 3D</td>
-                <td>123D Design</td>
-                <td>Creality Ender 3 pro</td>
-                <td class="multiple_links"><a href="https://www.printables.com/en/@Blazyst" target="_blank">
-                    printables.com/@Blazyst</a><br><a href="3d_print_details_en.html">Images des réalisations</a></td>
+                <td>Led chaser</td>
+                <td>It's a circuit made from a timer NE555 and a counter CD4017<br>
+                    thet turns on 10 leds one after the other
+                    which gives a caterpillar effect</td>
+            </tr>
+            <tr>
+                <td>Audio amplifier</td>
+                <td>Just some audio amplifiers made with small LM386 integrated circuit</td>    
             </tr>
         </table>
         <table>
-            <th colspan="4" class="table_title">Game developpement for game jams</th>
+            <th colspan="4" class="table_title">3D Print</th>
             <tr>
-                <th>Game</th>
-                <th>Language</th>
+                <th>Project</th>
                 <th>Software</th>
+                <th>Hardware</th>
                 <th>Link</th>
             </tr>
             <tr>
-                <td>Ghosts fight<br>It's the first game i really finished.<br>This game has been made in three days on the theme "ghosts"</td>
-                <td>Python (pygame) and the tool "pygbag"<br>in order to compile it for the web</td>
-                <td>Pycharm</td>
+                <td>An adjustable bedside lamp</td>
+                <td>123D Design</td>
+                <td>Creality Ender 3 pro</td>
+                <td class="multiple_links"></td>
+            </tr>
+            <tr>
+                <td>Some random little projects i made for contests</td>
+                <td>123D Design</td>
+                <td>Creality Ender 3 pro</td>
+                <td class="multiple_links"><a href="https://printables.com/@blazyst/models" target="_blank">printables.com/@blazyst</a></td>
+            </tr>
+        <table>
+            <th colspan="2" class="table_title">Arduino</th>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>infinite runner like game</td>
+                <td>One button to make the character jump, a lcd screen to display the whole game, a micro-switch to turn on/off the backlight,<br>
+                    one buzzer/speaker to make some music when we lose/win (it's not a real infinite runner) and of course obstacles.
+            </tr>
+            <tr>
+                <td>Clap switch</td>
+                <td>It's a simple microphone, with a relay to turn on/off the light when we clap hands</td>
+            </tr>
+            <tr>
+                <td>Capteur de vitesse infrarouge</td>
+                <td>Two infrared sensors placed at a known distance, which allows us to calculate the speed of an object that moves in front of it.<br>
+                    Example : we place the sensors at 10cm from each other, ig both sensors doesn't detect anything, we wait. when the first on detects something in font of it<br>
+                    we start a chronometer that we stop when the second one detects the object too. then we can do time/10 which gives us the time the object needs to travel 1cm,<br>
+                    then we can just switch to kilometers and hours to get the object's speed in km/h.</td>
+            </tr>
+        </table>
+        <table>
+            <th colspan="4" class="table_title">Game developement for game jams</th>
+            <tr>
+                <th>Game</th>
+                <th>Laguage</th>
+                <th>Softwares</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Ghosts fight<br>It's the first game I really finished.<br>
+                    This game has been made in three days on the theme "ghosts".</td>
+                <td>Python (pygame) and pygbag<br>to compile it for the web</td>
+                <td>Pycharm<br>and piskelapp for the graphics</td>
                 <td><a href="https://blazyst.itch.io/ghosts-fight" target="_blank">https://blazyst.itch.io/ghosts-fight</a></td>
             </tr>
             <tr>
                 <td>Key shooter<br>Made in one week</td>
-                <td>Python (pygame) and the tool "pygbag"<br>in order to compile it for the web</td>
-                <td>Pycharm</td>
+                <td>Python (pygame) and pygbag<br>to compile it for the web</td>
+                <td>Pycharm<br>and piskelapp</td>
                 <td><a href="https://blazyst.itch.io/key-shooter" target="_blank">https://blazyst.itch.io/key-shooter</a></td>
             </tr>
             <tr>
                 <td>Escape the darkness<br>Made in three hours</td>
-                <td>Python (pygame) and the tool "pygbag"<br>in order to compile it for the web</td>
-                <td>Pycharm</td>
+                <td>Python (pygame) and pygbag<br>to compile it for the web</td>
+                <td>Pycharm<br>and piskelapp</td>
                 <td><a href="https://blazyst.itch.io/escape-the-darkness" target="_blank">https://blazyst.itch.io/escape-the-darkness</a></td>
             </tr>
             <tr>
                 <td>Tank shooter<br>Made in one week</td>
-                <td>Python with the ursina librarie (3D engine)</td>
-                <td>Pycharm</td>
+                <td>Python with the ursina library (3D lib)</td>
+                <td>Pycharm,<br>Blender for the 3D models<br>and museScore 3 for the music</td>
                 <td><a href="https://blazyst.itch.io/tank-shooter" target="_blank">https://blazyst.itch.io/tank-shooter</a></td>
+            </tr>
+            <tr>
+                <td>Ship signal<br>Made in three days but with another person</td>
+                <td>Python with the pygame library</td>
+                <td>Pycharm</td>
+                <td><a href="https://blazyst.itch.io/ship-signal" target="_blank">https://blazyst.itch.io/ship-signal</a></td>
+            </tr>
+            <tr>
+                <td>Too many buttons<br>Made in three hours</td>
+                <td>Python with the ursina library (3D lib)</td>
+                <td>Pycharm<br>and Blender</td>
+                <td><a href="https://blazyst.itch.io/too-many-buttons" target="_blank">https://blazyst.itch.io/too-many-buttons</a></td>
+            </tr>
+            <tr>
+                <td>Don't over shoot<br>Made in three hours</td>
+                <td>Python with the pygame library</td>
+                <td>Pycharm,<br>beepbox for the music<br>and chiptone for the other sounds</td>
+                <td><a href="https://blazyst.itch.io/dont-over-shoot" target="_blank">https://blazyst.itch.io/dont-over-shoot</a></td>
+            </tr>
+            <tr>
+                <td>10s on the moon<br>Made in three days</td>
+                <td>Python with the ursina library (3D lib)</td>
+                <td>Pycharm,<br>Blender for the 3D models<br>and beepbox for the music</td>
+                <td><a href="https://blazyst.itch.io/10s-on-the-moon" target="_blank">https://blazyst.itch.io/10s-on-the-moon</a></td>
+            </tr>
+            <tr>
+                <td>space missions<br>made in 22 days</td>
+                <td>Python with the ursina library (3D lib)</td>
+                <td>Pycharm,<br>Blender<br>and chiptone for the sound effects</td>
+                <td><a href="https://blazyst.itch.io/space-missions" target="_blank">https://blazyst.itch.io/space-missions</a></td>
             </tr>
         </table>
     </main>
